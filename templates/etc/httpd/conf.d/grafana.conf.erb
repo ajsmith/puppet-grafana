@@ -1,0 +1,12 @@
+# Grafana Apache Configuration
+
+Header set Access-Control-Allow-Origin "http://<%= @fqdn %>"
+Header set Access-Control-Allow-Methods "GET, OPTIONS"
+Header set Access-Control-Allow-Headers "origin, authorization, accept"
+
+<VirtualHost *:<%= @http_port %>>
+
+    ServerName <%= @fqdn %>:<%= @http_port %>
+    DocumentRoot "/var/www/grafana"
+
+</VirtualHost>
