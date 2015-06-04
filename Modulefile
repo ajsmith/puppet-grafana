@@ -1,4 +1,4 @@
-name    'puppet-grafana'
+name    'ajsmith-grafana'
 version '0.2.0'
 source 'UNKNOWN'
 author 'Alex Smith <alex.smith@redhat.com>'
