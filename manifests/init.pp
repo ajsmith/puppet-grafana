@@ -1,23 +1,8 @@
 # == Class: grafana
 #
-# Configures Grafana monitoring dashboard.
+# Grafana puppet configuration.
 #
-# === Parameters
-#
-# [http_port]
-#   Port to configure HTTP to listen on. Default: 80
+# This file is intentionally blank. See the Docker manifests in this package
+# for building and deploying Grafana within Docker containers.
 
-class grafana (
-  $http_port = 80,
-  ) {
-
-  package {'grafana':
-    ensure => installed,
-  }
-
-  file {'/etc/httpd/conf.d/grafana.conf':
-    ensure  => present,
-    content => template('grafana/etc/httpd/conf.d/grafana.conf.erb'),
-  }
-
-}
+class grafana {}
