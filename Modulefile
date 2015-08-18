@@ -7,3 +7,4 @@ summary 'Grafana application configuration.'
 description ''
 
 dependency 'puppetlabs/stdlib', '>=4.5.1'
+dependency 'puppetlabs-vcsrepo', '>=1.3.1'

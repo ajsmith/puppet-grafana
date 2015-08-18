@@ -4,13 +4,17 @@
   "author": "Alex Smith <alex.smith@redhat.com>",
   "summary": "Grafana application configuration.",
   "license": "GPL 2",
-  "source": "",
-  "project_page": "http://github.com/ajsmith/puppet-grafana",
-  "issues_url": "http://github.com/ajsmith/puppet-grafana/issues",
+  "source": "https://github.com/ajsmith/puppet-grafana.git",
+  "project_page": "https://github.com/ajsmith/puppet-grafana",
+  "issues_url": "https://github.com/ajsmith/puppet-grafana/issues",
   "dependencies": [
     {
-      "name": "puppetlabs-stdlib",
-      "version_range": ">= 4.5.1"
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.5.1"
+    },
+    {
+      "name": "puppetlabs/vcsrepo",
+      "version_requirement": ">= 1.3.1"
     }
   ]
 }
