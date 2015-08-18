@@ -22,7 +22,7 @@ from source (how you acquire that package is up to you).
 
 Add the following to configure a host to build a Grafana image: [^1]
 
-```.pp
+```pp
 include grafana::docker::image
 ```
 
@@ -36,7 +36,7 @@ services.
 
 The simplest configuration to run the Grafana container is:
 
-```.pp
+```pp
 grafana::docker::container { 'grafana': }
 ```
 
@@ -44,7 +44,7 @@ More than likely, you'll want to manage persistent data using the [data volume
 container
 pattern](https://docs.docker.com/userguide/dockervolumes/#creating-and-mounting-a-data-volume-container). To implement that, we do the following:
 
-```.pp
+```pp
 grafana::docker::data_volume_container { 'grafana-data': }
 ->
 grafana::docker::container { 'grafana':
