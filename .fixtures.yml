@@ -7,7 +7,7 @@ fixtures:
     stdlib:
       repo: "puppetlabs/stdlib"
       ref:  "4.5.1"
-    docker_platform:
+    docker:
       repo: "puppetlabs/docker_platform"
       ref:  "1.1.0"
     vcsrepo:
