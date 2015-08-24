@@ -1,5 +1,5 @@
 name    'ajsmith-grafana'
-version '0.3.0'
+version '0.3.1'
 source 'UNKNOWN'
 author 'Alex Smith <alex.smith@redhat.com>'
 license 'GPL-2'
