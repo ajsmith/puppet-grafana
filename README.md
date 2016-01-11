@@ -67,6 +67,6 @@ running Docker:
 
 ## Release Notes
 
-Soon       - v0.3.0 release.
+### v0.3.2 2016/01/11
 
-2015/05/18 - v0.2.0 release.
+Initial release.
