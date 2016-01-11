@@ -8,7 +8,7 @@ class grafana::docker::image {
     ensure   => latest,
     provider => git,
     source   => 'https://github.com/ajsmith/docker-grafana.git',
-    revision => 'master',
+    revision => '1.0',
   }
 
   ~>
