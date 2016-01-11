@@ -1,6 +1,6 @@
 {
     "name": "ajsmith-grafana",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "author": "Alex Smith <alex.smith@redhat.com>",
     "summary": "Grafana instance configuration using Docker.",
     "license": "GPL-2.0",
