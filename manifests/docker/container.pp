@@ -1,3 +1,7 @@
+# == Class: grafana::docker::container
+#
+# Configure a systemd service to run a Grafana container.
+
 define grafana::docker::container (
   $image            = 'grafana',
   $depends          = undef,
@@ -6,7 +10,7 @@ define grafana::docker::container (
   $volumes_from     = undef,
 ) {
 
-  docker_systemd::container { "$title":
+  docker_systemd::container { $title:
     image        => $image,
     depends      => $depends,
     link         => $link,
