@@ -29,6 +29,21 @@ include grafana::docker::image
 [^1]: This uses the Docker image resources provided by
 <https://github.com/ajsmith/docker-grafana>.
 
+### Customizing the Image
+
+The image can also be customized by providing a class which customizes the
+Docker build. This is done by setting `image_config_cls` to the name of the
+class to do the customization.
+
+```puppet
+class { 'grafana::docker::image':
+    image_config_cls => 'mymodule::grafana::image_config'
+}
+```
+
+The image build resources are checked out to `/opt/docker-grafana`, so most
+customizations should be placed within that directory.
+
 ### Running the Container
 
 To run Grafana as a service, containers are configured to run as systemd

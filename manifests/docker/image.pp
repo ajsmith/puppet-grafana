@@ -2,7 +2,9 @@
 #
 # Configure a host to build the Grafana docker image.
 
-class grafana::docker::image {
+class grafana::docker::image (
+  $image_config_cls = 'image_config'
+) {
 
   vcsrepo { '/opt/docker-grafana':
     ensure   => latest,
@@ -12,10 +14,7 @@ class grafana::docker::image {
   }
 
   ~>
-  file { '/opt/docker-grafana/grafana.ini':
-    ensure  => present,
-    content => template('grafana/etc/grafana/grafana.ini.erb'),
-  }
+  class { $image_config_cls: }
 
   ~>
   docker::image { 'grafana':
