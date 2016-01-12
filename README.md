@@ -26,7 +26,7 @@ Add the following to configure a host to build a Grafana image: [^1]
 include grafana::docker::image
 ```
 
-[^1]: This uses the Docker iamge resources provided by
+[^1]: This uses the Docker image resources provided by
 <https://github.com/ajsmith/docker-grafana>.
 
 ### Running the Container
