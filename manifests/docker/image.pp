@@ -4,7 +4,7 @@
 
 class grafana::docker::image (
   $image_config_cls = 'image_config',
-  $vcs_revision     = 'latest',
+  $vcs_revision     = '1.0',
 ) {
 
   vcsrepo { '/opt/docker-grafana':
