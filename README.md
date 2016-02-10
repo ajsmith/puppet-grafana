@@ -26,8 +26,8 @@ Add the following to configure a host to build a Grafana image[^1].
 class { 'grafana::docker::image': }
 ```
 
-By default, this pulls the latest build resources from Git. You can optionally
-set a specific revision to use:
+By default, this pulls Docker resources from a branch in Git. Optionally,
+you can set a specific revision:
 
 ```puppet
 class { 'grafana::docker::image':
