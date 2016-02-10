@@ -3,11 +3,12 @@
 # Configure a host to build the Grafana docker image.
 
 class grafana::docker::image (
-  $image_config_cls = 'image_config',
+  $docker_dir       = '/opt/docker-grafana',
   $vcs_revision     = '1.0',
+  $image_config_cls = 'image_config',
 ) {
 
-  vcsrepo { '/opt/docker-grafana':
+  vcsrepo { $docker_dir:
     ensure   => latest,
     provider => git,
     source   => 'https://github.com/ajsmith/docker-grafana.git',
@@ -15,12 +16,14 @@ class grafana::docker::image (
   }
 
   ~>
-  class { $image_config_cls: }
+  class { $image_config_cls:
+    docker_dir => $docker_dir,
+  }
 
   ~>
   docker::image { 'grafana':
     ensure     => present,
-    docker_dir => '/opt/docker-grafana/',
+    docker_dir => $docker_dir,
   }
 
 }
