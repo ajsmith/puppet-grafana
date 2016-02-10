@@ -91,6 +91,7 @@ running Docker:
 
 ### v0.4.0 unreleased
 
+- Use updated Grafana v2.6.0 image.
 - Allow customizations to the Grafana Docker image build process.
 - Added option to set the VCS revision of the Grafana Docker image.
 - Improve rspec test coverage.
