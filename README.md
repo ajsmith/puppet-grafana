@@ -89,7 +89,7 @@ running Docker:
 
 ## Release Notes
 
-### v0.4.0 unreleased
+### v0.4.0 2016/02/10
 
 - Use updated Grafana v2.6.0 image.
 - Allow customizations to the Grafana Docker image build process.
