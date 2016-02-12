@@ -22,7 +22,7 @@
 
 class grafana::docker::image (
   $docker_dir       = '/opt/docker-grafana',
-  $vcs_revision     = '1.0',
+  $vcs_revision     = '1.1',
   $image_config_cls = 'image_config',
 ) {
 
