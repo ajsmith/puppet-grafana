@@ -89,11 +89,15 @@ running Docker:
 
 ## Release Notes
 
+### v0.4.1 2016/02/11
+
+- Fix Grafana image version.
+
 ### v0.4.0 2016/02/10
 
 - Use updated Grafana v2.6.0 image.
 - Allow customizations to the Grafana Docker image build process.
-- Added option to set the VCS revision of the Grafana Docker image.
+- Add option to set the VCS revision of the Grafana Docker image.
 - Improve rspec test coverage.
 
 ### v0.3.3 2016/01/11
