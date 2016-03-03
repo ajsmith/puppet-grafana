@@ -62,9 +62,9 @@ The simplest configuration to run the Grafana container is:
 grafana::docker::container { 'grafana': }
 ```
 
-More than likely, you'll want to manage persistent data using the [data volume
-container
-pattern](https://docs.docker.com/userguide/dockervolumes/#creating-and-mounting-a-data-volume-container). To implement that, we do the following:
+More than likely, you'll want to manage persistent data using the
+[data volume container pattern](https://docs.docker.com/userguide/dockervolumes/#creating-and-mounting-a-data-volume-container).
+To implement that, we do the following:
 
 ```puppet
 grafana::docker::data_volume_container { 'grafana-data': }
