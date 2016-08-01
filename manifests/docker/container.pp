@@ -8,6 +8,7 @@ define grafana::docker::container (
   $link             = undef,
   $publish          = undef,
   $volumes_from     = undef,
+  $volume           = undef,
 ) {
 
   docker_systemd::container { $title:
@@ -16,6 +17,7 @@ define grafana::docker::container (
     link         => $link,
     publish      => $publish,
     volumes_from => $volumes_from,
+    volume       => $volume,
   }
 
 }
