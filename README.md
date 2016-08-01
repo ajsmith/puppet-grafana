@@ -89,6 +89,10 @@ running Docker:
 
 ## Release Notes
 
+### v0.4.2 2016/08/01
+
+- Support volume configuration for the Grafana Docker container.
+
 ### v0.4.1 2016/02/11
 
 - Fix Grafana image version.
