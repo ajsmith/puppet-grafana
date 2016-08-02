@@ -1,6 +1,6 @@
 {
     "name": "ajsmith-grafana",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "author": "Alex Smith <alex.smith@redhat.com>",
     "summary": "Grafana instance configuration using Docker.",
     "license": "GPL-2.0",
@@ -22,10 +22,16 @@
             "operatingsystemrelease": ["20", "21", "22", "23"]
         }
     ],
-    "requirements": [{
-	"name": "puppet",
-	"version_requirement": "3.4"
-    }],
+    "requirements": [
+        {
+            "name": "pe",
+            "version_requirement": ">= 3.7"
+        },
+        {
+            "name": "puppet",
+            "version_requirement": ">= 3.4"
+        }
+    ],
     "dependencies": [
         {
             "name": "puppetlabs/stdlib",
