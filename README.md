@@ -18,39 +18,6 @@ from source (how you acquire that package is up to you).
 
 ## Usage
 
-### Building the Image
-
-Add the following to configure a host to build a Grafana image[^1].
-
-```puppet
-class { 'grafana::docker::image': }
-```
-
-By default, this pulls Docker resources from a branch in Git. Optionally,
-you can set a specific revision:
-
-```puppet
-class { 'grafana::docker::image':
-   vcs_revision => '1.0.0'
-}
-```
-
-The image can also be customized by providing a class which customizes the
-Docker build. This is done by setting `image_config_cls` with the name of the
-class to do the customization.
-
-```puppet
-class { 'grafana::docker::image':
-    image_config_cls => 'mymodule::grafana::image_config'
-}
-```
-
-The image build resources are checked out to `/opt/docker-grafana`, so most
-customizations should be placed within that directory.
-
-[^1]: This uses the Docker image resources provided by
-<https://github.com/ajsmith/docker-grafana>.
-
 ### Running the Container
 
 To run Grafana as a service, containers are configured to run as systemd
