@@ -58,6 +58,9 @@ running Docker:
 
 ### v0.5.0 (unreleased)
 
+- Ugrade to ajsmith/docker_systemd v0.3.x.
+- Add `pull_image` and `systemd_env_file` options to Docker container
+  resources.
 - Removed resources for building Grafana Docker images.
 
 ### v0.4.3 2016/08/01
