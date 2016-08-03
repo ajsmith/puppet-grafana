@@ -56,6 +56,10 @@ running Docker:
 
 ## Release Notes
 
+### v0.5.0 (unreleased)
+
+- Removed resources for building Grafana Docker images.
+
 ### v0.4.3 2016/08/01
 
 - Support volume configuration for the Grafana Docker container.
