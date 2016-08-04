@@ -56,7 +56,11 @@ running Docker:
 
 ## Release Notes
 
-### v0.5.0 (unreleased)
+### v0.5.1
+
+- Update default Grafana Docker image.
+
+### v0.5.0
 
 - Ugrade to ajsmith/docker_systemd v0.3.x.
 - Add `pull_image` and `systemd_env_file` options to Docker container

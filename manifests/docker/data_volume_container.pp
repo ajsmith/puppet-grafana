@@ -3,7 +3,7 @@
 # Configure a systemd service to run a Grafana data volume container.
 
 define grafana::docker::data_volume_container (
-  $image            = 'grafana',
+  $image            = 'ajsmith/grafana',
   $pull_image       = false,
   $systemd_env_file = undef,
 ) {

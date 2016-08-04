@@ -3,7 +3,7 @@
 # Configure a systemd service to run a Grafana container.
 
 define grafana::docker::container (
-  $image            = 'grafana',
+  $image            = 'ajsmith/grafana',
   $pull_image       = false,
   $depends          = undef,
   $link             = undef,
