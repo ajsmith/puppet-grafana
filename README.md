@@ -110,7 +110,7 @@ running Docker:
 
 ## Release Notes
 
-### v0.6.0
+### v0.6.0 unreleased
 
 - Upgrade to ajsmith/docker_systemd v0.4.x.
 - Provide support for more Docker options:
@@ -119,15 +119,15 @@ running Docker:
   - `--log-driver`
   - `--log-opt`
 
-### v0.5.2
+### v0.5.2 2016/08/04
 
 - Documentation updates.
 
-### v0.5.1
+### v0.5.1 2016/08/04
 
 - Update default Grafana Docker image.
 
-### v0.5.0
+### v0.5.0 2016/08/03
 
 - Ugrade to ajsmith/docker_systemd v0.3.x.
 - Add `pull_image` and `systemd_env_file` options to Docker container
