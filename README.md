@@ -102,6 +102,8 @@ running Docker:
 
 ## Release Notes
 
+### v0.6.0
+
 ### v0.5.2
 
 - Documentation updates.
