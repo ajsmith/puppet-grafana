@@ -110,7 +110,7 @@ running Docker:
 
 ## Release Notes
 
-### v0.6.0 unreleased
+### v0.6.0 2016/08/17
 
 - Upgrade to ajsmith/docker_systemd v0.4.x.
 - Provide support for more Docker options:
