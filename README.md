@@ -31,13 +31,21 @@ The following options are supported on `grafana::docker::container`:
 
   * `image`: The name of the Docker image to use.
 
-  * `pull_image`: Always pull image before starting the container. (Default
-    `false`)
-
   * `depends`: Dependencies on other systemd docker units which need to be
     started before this one. (List)
 
+  * `pull_image`: Always pull image before starting the container. (Default
+    `false`)
+
+  * `env`: Set environment variables in the container. (List)
+
+  * `env_file`: Use environment file in the container. (List)
+
   * `link`: Containers which this container links to. (List)
+
+  * `log_driver`: Set log driver to use.
+
+  * `log_opt`: Set options for the log driver. (List)
 
   * `publish`: Ports which should be published by this container. (List)
 
@@ -105,6 +113,11 @@ running Docker:
 ### v0.6.0
 
 - Upgrade to ajsmith/docker_systemd v0.4.x.
+- Provide support for more Docker options:
+  - `--env`
+  - `--env-file`
+  - `--log-driver`
+  - `--log-opt`
 
 ### v0.5.2
 
