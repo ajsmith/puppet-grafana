@@ -104,6 +104,8 @@ running Docker:
 
 ### v0.6.0
 
+- Upgrade to ajsmith/docker_systemd v0.4.x.
+
 ### v0.5.2
 
 - Documentation updates.
